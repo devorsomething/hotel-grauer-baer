@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import WhatsAppButton from '@/components/WhatsAppButton'
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -686,6 +687,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <WhatsAppButton phone="+43 5574 654 321" />
 
     </div>
   )
