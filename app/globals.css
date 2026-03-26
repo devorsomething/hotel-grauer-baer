@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background-color: #FAF8F0;
+    color: #2C2C2C;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-forest text-white px-8 py-3 rounded-md font-medium font-sans transition-all duration-300;
+  }
+  .btn-primary:hover {
+    @apply bg-forest-dark shadow-lg;
+  }
+  .btn-secondary {
+    @apply border-2 border-forest text-forest px-8 py-3 rounded-md font-medium font-sans transition-all duration-300;
+  }
+  .btn-secondary:hover {
+    @apply bg-forest text-white;
+  }
+  .section-heading {
+    @apply font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-2;
+  }
+  .section-subheading {
+    @apply font-sans text-honey font-medium text-sm uppercase tracking-widest mb-6;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+}
